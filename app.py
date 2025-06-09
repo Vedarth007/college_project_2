@@ -48,3 +48,14 @@ with col2:
         key="pose_matcher",
         video_transformer_factory=lambda: PoseMatcher(reference_angle)
     )
+#for testing
+import time
+import streamlit as st
+
+st.title("Health Check Debugging")
+st.write("App is alive!")
+
+# Simulate app working
+for i in range(10):
+    st.write(f"Heartbeat {i}")
+    time.sleep(1)
